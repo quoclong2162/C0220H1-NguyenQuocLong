@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+        <label>Name</label>
+        <input id="Name" type="text" />
+        <br>
+        <label>Idnumber</label>
+        <input id="Idnumber" type="number"/>
+        <br>
+        <label>Birth</label>
+        <input id="Birth" type="date"/>
+        <br>
+        <label>Email</label>
+        <input id="Email" type="text"/>
+        <br>
+        <label>Address</label>
+        <input id="Address" type="text"/>
+        <br>
+        <select name='TypeCustomer' id ='TypeCustomer'>
+            <option value="Diamond">Diamond</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Member">Member</option>
+        </select>
+        <br>
+        <label>Amount</label>
+        <input id="Amount" type="text"/>
+        <br>
+        <label>RentDays</label>
+        <input id="RentDays" type="text"/>
+        <br>
+        <select name ='Service' id ='Service'>
+            <option value="Villa">Villa</option>
+            <option value="House">House</option>
+            <option value="Room">Room</option>
+        </select>
+        <br>
+        <select name="TypeRoom" id ='TypeRoom'>
+            <option value="Vip">Vip</option>
+            <option value="Business">Business</option>
+            <option value="Normal">Normal</option>
+        </select>
+        <br>
+        <button onclick='show()'>Update</button>
+        <button onclick='show1()'>Edit</button>
+        <p id = 'result'></p>
+        <script src="1.js"></script>
+</body>
+</html>

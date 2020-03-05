@@ -1,0 +1,14 @@
+var name = prompt('nhap ten:');
+var idnum = prompt('nhap so cnmd:');
+var birth = prompt('nhap ngay sinh:');
+var email = prompt('nhap email:');
+var address = prompt('nhap dia chi:');
+var customer = prompt('nhap loai khach hang:');
+var discount = prompt('giam gia:')*1;
+var amount = prompt('so luong di kem:');
+var rentDays = prompt('so ngay thue:')*1;
+var service = prompt('loai dich vu:');
+var money = prompt('gia tien')*1;
+var room = prompt('loai phong thue:');
+var total=parseInt(money*rentDays*(1-discount/100));
+alert(name + '\n' + idnum + '\n' + birth + '\n' + email + '\n' + address + '\n' + customer + '\n' + discount + '\n' + amount + '\n' + rentDays + '\n' + service + '\n' + room+'\n tong cong la:'+total+'$');
