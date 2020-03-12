@@ -13,12 +13,13 @@ var service = document.getElementById('Service');
 var typeRoom = document.getElementById('TypeRoom');
 var result = document.getElementById('result');
 var money;
+
 function show() {
-    if (Service.value === 'Villa') {
+    if (Service.value === "Villa") {
         money = 500;
-    } else if (Service.value === 'House') {
+    } else if (Service.value === "House") {
         money = 300;
-    } else if (Service.value === 'Room') {
+    } else if (Service.value === "Room") {
         money = 100;
     }
 
@@ -28,6 +29,8 @@ function show() {
         discountOfAddress = 10;
     } else if (Address.value === "Quảng Nam") {
         discountOfAddress = 5;
+    }else {
+        discountOfAddress = 0;
     }
 
     if (RentDays.value >= 7) {
@@ -37,6 +40,7 @@ function show() {
     } else if (2 <= RentDays.value <= 4) {
         discountOfRentDays = 10;
     }
+
 
     if (TypeCustomer.value === 'Diamond') {
         discountOfCustomer = 15;
@@ -49,11 +53,16 @@ function show() {
     } else if (TypeCustomer.value === 'Member') {
         discountOfCustomer = 0;
     }
-     discount = discountOfCustomer + discountOfRentDays + discountOfAddress;
-     total = (money * rentDays) - discount;
+    var discount = discountOfAddress + discountOfCustomer + discountOfRentDays;
+    var total = money * RentDays.value - discount;
 
 
-    result.innerText = Name.value + '\n' + Idnumber.value + '\n' + Birth.value + '\n' + Email.value + '\n' + Address.value + '\n' + TypeCustomer.value + '\n' + Amount.value + '\n' + RentDays.value + '\n' + Service.value + '\n' + TypeRoom.value;
-    alert(+total);
+    result.innerText = Name.value + '\n' + Idnumber.value + '\n' + Birth.value + '\n' + Email.value + '\n' + Address.value + '\n' + TypeCustomer.value + '\n' + Amount.value + '\n' + RentDays.value + '\n' + Service.value + '\n' + TypeRoom.value + '\n' + total;
+
+}
+
+function show1() {
+    result.innerText = ''
+
 }
 
