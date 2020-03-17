@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function footToMeter(foot) {
+            var meter;
+            parseFloat(meter=0.305*foot);
+            return meter;
+        }
+        function meterToFoot(meter) {
+            var foot;
+            parseFloat(foot=3.279*meter);
+            return foot;
+        }
+        var a=prompt('nhap foot');
+        var b=prompt('nhap meter');
+        var c=footToMeter(a);
+        var d=meterToFoot(b);
+        alert('footToMeter '+c);
+        alert('meterToFoot '+d);
+    </script>
+</body>
+</html>

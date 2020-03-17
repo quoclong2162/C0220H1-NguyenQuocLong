@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    var star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function  searchStar(starName) {
+
+
+        for (i=0;i<star1.length;i++){
+            if (star1[i]==starName){
+                var j=i;
+                break;
+            }
+        }
+        return star2[j];
+
+
+    }
+    var  c=prompt('tim 1 ngoi sao:');
+    var  d=searchStar(c);
+    alert(d);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function covertTemperature(Celcius) {
+        this.Celcius = Celcius;
+
+        this.CtoF = function () {
+            return Celcius * 1.8 + 32
+        };
+        this.CtoK = function () {
+            return Celcius*1 + 273
+        };
+    }
+    var Celcius = new covertTemperature(prompt('nhap nhiet do C:'));
+    var F= Celcius.CtoF();
+    var K= Celcius.CtoK();
+    alert (F+' '+K);
+</script>
+</body>
+</html>
